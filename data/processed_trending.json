@@ -1,18 +1,18 @@
 {
   "metadata": {
-    "last_updated": "2025-09-24T21:20:14.474127",
-    "count": 8,
+    "last_updated": "2025-09-24T13:46:53.306277",
+    "count": 11,
     "source": "GitHub Trending API",
-    "total_merged": 8,
+    "total_merged": 11,
     "new_added": 3,
-    "processed_at": "2025-09-24T21:20:58.484206",
-    "total_repositories": 8,
+    "processed_at": "2025-09-24T13:46:53.367171",
+    "total_repositories": 11,
     "language_distribution": {
-      "Python": 2,
-      "Go": 1,
+      "JavaScript": 3,
+      "Python": 3,
+      "Go": 2,
       "Ruby": 1,
       "TypeScript": 1,
-      "JavaScript": 2,
       "C": 1
     }
   },
@@ -63,6 +63,21 @@
       "language_color": "#f1e05a"
     },
     {
+      "author": "django",
+      "name": "django",
+      "full_name": "django/django",
+      "url": "https://github.com/django/django",
+      "description": "The official django repository with latest features and updates",
+      "language": "Python",
+      "stars": 199160,
+      "forks": 23696,
+      "current_period_stars": 412,
+      "stars_text": "199.2K",
+      "forks_text": "23.7K",
+      "trending_stars_text": "412",
+      "language_color": "#3572A5"
+    },
+    {
       "author": "torvalds",
       "name": "linux",
       "full_name": "torvalds/linux",
@@ -91,6 +106,21 @@
       "forks_text": "28.0K",
       "trending_stars_text": "500",
       "language_color": "#2b7489"
+    },
+    {
+      "author": "kubernetes",
+      "name": "kubernetes",
+      "full_name": "kubernetes/kubernetes",
+      "url": "https://github.com/kubernetes/kubernetes",
+      "description": "kubernetes: Modern solution for Go development",
+      "language": "Go",
+      "stars": 106217,
+      "forks": 29767,
+      "current_period_stars": 469,
+      "stars_text": "106.2K",
+      "forks_text": "29.8K",
+      "trending_stars_text": "469",
+      "language_color": "#00ADD8"
     },
     {
       "author": "docker",
@@ -136,6 +166,21 @@
       "forks_text": "30.0K",
       "trending_stars_text": "400",
       "language_color": "#3572A5"
+    },
+    {
+      "author": "nodejs",
+      "name": "node",
+      "full_name": "nodejs/node",
+      "url": "https://github.com/nodejs/node",
+      "description": "node: Modern solution for JavaScript development",
+      "language": "JavaScript",
+      "stars": 51207,
+      "forks": 10043,
+      "current_period_stars": 44,
+      "stars_text": "51.2K",
+      "forks_text": "10.0K",
+      "trending_stars_text": "44",
+      "language_color": "#f1e05a"
     }
   ],
   "languages": [
