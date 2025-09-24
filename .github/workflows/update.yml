@@ -13,6 +13,8 @@ on:
 jobs:
   update-data:
     runs-on: ubuntu-latest
+    outputs:
+      has-changes: ${{ steps.check-changes.outputs.changes }}
 
     steps:
       - name: Checkout repository
@@ -76,9 +78,7 @@ jobs:
   deploy:
     needs: update-data
     runs-on: ubuntu-latest
-
-    # 只有当数据有更新时才部署
-    if: needs.update-data.result == 'success' && steps.check-changes.outputs.changes == 'true'
+    if: needs.update-data.outputs.has-changes == 'true'
 
     steps:
       - name: Checkout repository
