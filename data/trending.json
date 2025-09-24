@@ -1,12 +1,75 @@
 {
   "metadata": {
-    "last_updated": "2025-09-24T21:20:14.474127",
-    "count": 8,
+    "last_updated": "2025-09-24T13:46:53.306277",
+    "count": 11,
     "source": "GitHub Trending API",
-    "total_merged": 8,
+    "total_merged": 11,
     "new_added": 3
   },
   "repositories": [
+    {
+      "author": "nodejs",
+      "name": "node",
+      "full_name": "nodejs/node",
+      "url": "https://github.com/nodejs/node",
+      "description": "node: Modern solution for JavaScript development",
+      "language": "JavaScript",
+      "stars": 51207,
+      "forks": 10043,
+      "currentPeriodStars": 44,
+      "builtBy": [
+        {
+          "username": "maintainer",
+          "href": "https://github.com/maintainer"
+        },
+        {
+          "username": "dev2",
+          "href": "https://github.com/dev2"
+        }
+      ]
+    },
+    {
+      "author": "django",
+      "name": "django",
+      "full_name": "django/django",
+      "url": "https://github.com/django/django",
+      "description": "The official django repository with latest features and updates",
+      "language": "Python",
+      "stars": 199160,
+      "forks": 23696,
+      "currentPeriodStars": 412,
+      "builtBy": [
+        {
+          "username": "dev2",
+          "href": "https://github.com/dev2"
+        },
+        {
+          "username": "dev1",
+          "href": "https://github.com/dev1"
+        }
+      ]
+    },
+    {
+      "author": "kubernetes",
+      "name": "kubernetes",
+      "full_name": "kubernetes/kubernetes",
+      "url": "https://github.com/kubernetes/kubernetes",
+      "description": "kubernetes: Modern solution for Go development",
+      "language": "Go",
+      "stars": 106217,
+      "forks": 29767,
+      "currentPeriodStars": 469,
+      "builtBy": [
+        {
+          "username": "dev2",
+          "href": "https://github.com/dev2"
+        },
+        {
+          "username": "maintainer",
+          "href": "https://github.com/maintainer"
+        }
+      ]
+    },
     {
       "author": "pytorch",
       "name": "pytorch",
