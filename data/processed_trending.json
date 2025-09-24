@@ -1,14 +1,14 @@
 {
   "metadata": {
-    "last_updated": "2025-09-24T13:53:41.471351",
-    "count": 11,
+    "last_updated": "2025-09-24T13:59:43.654821",
+    "count": 12,
     "source": "GitHub Trending API",
-    "total_merged": 11,
-    "new_added": 0,
-    "processed_at": "2025-09-24T13:53:41.527138",
-    "total_repositories": 11,
+    "total_merged": 12,
+    "new_added": 1,
+    "processed_at": "2025-09-24T13:59:43.709601",
+    "total_repositories": 12,
     "language_distribution": {
-      "JavaScript": 3,
+      "JavaScript": 4,
       "Python": 3,
       "Go": 2,
       "Ruby": 1,
@@ -45,6 +45,21 @@
       "stars_text": "220.0K",
       "forks_text": "46.0K",
       "trending_stars_text": "800",
+      "language_color": "#f1e05a"
+    },
+    {
+      "author": "vercel",
+      "name": "next.js",
+      "full_name": "vercel/next.js",
+      "url": "https://github.com/vercel/next.js",
+      "description": "Open source next.js project maintained by vercel",
+      "language": "JavaScript",
+      "stars": 219357,
+      "forks": 31305,
+      "current_period_stars": 41,
+      "stars_text": "219.4K",
+      "forks_text": "31.3K",
+      "trending_stars_text": "41",
       "language_color": "#f1e05a"
     },
     {
