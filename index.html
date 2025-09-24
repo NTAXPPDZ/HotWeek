@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub热榜 - 每周热门项目精选</title>
+    <meta name="description" content="自动获取并展示GitHub每周热榜项目，发现最受欢迎的开发者项目">
+    <meta name="keywords" content="GitHub,热榜,开源项目,编程,开发者">
+    
+    <!-- 样式文件 -->
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <!-- 字体图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- 预加载关键资源 -->
+    <link rel="preload" href="data/processed_trending.json" as="fetch" crossorigin="anonymous">
+</head>
+<body>
+    <!-- 页面头部 -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">
+                    <i class="fab fa-github"></i>
+                    GitHub热榜
+                </h1>
+                <div class="header-info">
+                    <span class="update-time" id="updateTime">数据加载中...</span>
+                    <span class="total-count" id="totalCount"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 筛选区域 -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter-group">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="搜索项目名称或描述..." aria-label="搜索项目">
+                </div>
+                
+                <div class="filter-controls">
+                    <select id="languageFilter" aria-label="按语言筛选">
+                        <option value="">所有语言</option>
+                        <!-- 语言选项将通过JavaScript动态加载 -->
+                    </select>
+                    
+                    <select id="sortFilter" aria-label="排序方式">
+                        <option value="stars">按星标数排序</option>
+                        <option value="trending">按趋势排序</option>
+                        <option value="forks">按分支数排序</option>
+                        <option value="name">按名称排序</option>
+                    </select>
+                    
+                    <button id="refreshBtn" class="refresh-btn" aria-label="刷新数据">
+                        <i class="fas fa-sync-alt"></i>
+                        刷新
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主要内容区域 -->
+    <main class="main">
+        <div class="container">
+            <!-- 加载状态 -->
+            <div id="loadingState" class="loading-state">
+                <div class="spinner"></div>
+                <p>正在加载GitHub热榜数据...</p>
+            </div>
+
+            <!-- 错误状态 -->
+            <div id="errorState" class="error-state" style="display: none;">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h3>数据加载失败</h3>
+                <p>无法获取GitHub热榜数据，请稍后重试。</p>
+                <button id="retryBtn" class="retry-btn">重试</button>
+            </div>
+
+            <!-- 空状态 -->
+            <div id="emptyState" class="empty-state" style="display: none;">
+                <i class="fas fa-inbox"></i>
+                <h3>暂无项目</h3>
+                <p>当前筛选条件下没有找到匹配的项目。</p>
+            </div>
+
+            <!-- 项目统计 -->
+            <div id="statsSection" class="stats-section" style="display: none;">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number" id="totalProjects">0</span>
+                        <span class="stat-label">总项目数</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="totalStars">0</span>
+                        <span class="stat-label">总星标数</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="languageCount">0</span>
+                        <span class="stat-label">编程语言</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="trendingStars">0</span>
+                        <span class="stat-label">本周新增星标</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 项目网格 -->
+            <div id="projectsGrid" class="projects-grid" style="display: none;">
+                <!-- 项目卡片将通过JavaScript动态生成 -->
+            </div>
+
+            <!-- 分页控件 -->
+            <div id="pagination" class="pagination" style="display: none;">
+                <button id="prevPage" class="page-btn" disabled>
+                    <i class="fas fa-chevron-left"></i>
+                    上一页
+                </button>
+                <span class="page-info" id="pageInfo">第 1 页，共 1 页</span>
+                <button id="nextPage" class="page-btn" disabled>
+                    下一页
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页面底部 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 GitHub热榜 - 数据每周一自动更新</p>
+                <div class="footer-links">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+                    <a href="#" id="aboutLink">关于</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 关于模态框 -->
+    <div id="aboutModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>关于 GitHub热榜</h2>
+                <button id="closeModal" class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>这是一个自动获取并展示GitHub每周热榜项目的网页应用。</p>
+                <h3>功能特性：</h3>
+                <ul>
+                    <li>📊 自动获取GitHub热榜项目数据</li>
+                    <li>🎨 现代化的卡片式UI设计</li>
+                    <li>🔍 支持按编程语言和关键词搜索</li>
+                    <li>📱 响应式设计，适配各种设备</li>
+                    <li>⚡ 通过GitHub Pages快速部署</li>
+                </ul>
+                <h3>技术栈：</h3>
+                <ul>
+                    <li>前端：HTML5 + CSS3 + JavaScript</li>
+                    <li>数据获取：Python + GitHub API</li>
+                    <li>自动化：GitHub Actions</li>
+                    <li>部署：GitHub Pages</li>
+                </ul>
+                <p>数据每周一凌晨自动更新，确保您看到的是最新的热门项目。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript文件 -->
+    <script src="scripts/app.js"></script>
+</body>
+</html>

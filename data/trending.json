@@ -1,0 +1,124 @@
+{
+  "metadata": {
+    "last_updated": "2025-09-24T21:20:14.474127",
+    "count": 8,
+    "source": "GitHub Trending API",
+    "total_merged": 8,
+    "new_added": 3
+  },
+  "repositories": [
+    {
+      "author": "pytorch",
+      "name": "pytorch",
+      "full_name": "pytorch/pytorch",
+      "url": "https://github.com/pytorch/pytorch",
+      "description": "A powerful Python library for building amazing applications",
+      "language": "Python",
+      "stars": 93331,
+      "forks": 21754,
+      "currentPeriodStars": 311,
+      "builtBy": [
+        {
+          "username": "dev2",
+          "href": "https://github.com/dev2"
+        },
+        {
+          "username": "dev1",
+          "href": "https://github.com/dev1"
+        }
+      ]
+    },
+    {
+      "author": "docker",
+      "name": "compose",
+      "full_name": "docker/compose",
+      "url": "https://github.com/docker/compose",
+      "description": "compose: Modern solution for Go development",
+      "language": "Go",
+      "stars": 103228,
+      "forks": 19476,
+      "currentPeriodStars": 92,
+      "builtBy": [
+        {
+          "username": "maintainer",
+          "href": "https://github.com/maintainer"
+        },
+        {
+          "username": "dev3",
+          "href": "https://github.com/dev3"
+        }
+      ]
+    },
+    {
+      "author": "rails",
+      "name": "rails",
+      "full_name": "rails/rails",
+      "url": "https://github.com/rails/rails",
+      "description": "Open source rails project maintained by rails",
+      "language": "Ruby",
+      "stars": 229625,
+      "forks": 51738,
+      "currentPeriodStars": 78,
+      "builtBy": [
+        {
+          "username": "dev3",
+          "href": "https://github.com/dev3"
+        },
+        {
+          "username": "dev1",
+          "href": "https://github.com/dev1"
+        }
+      ]
+    },
+    {
+      "author": "microsoft",
+      "name": "vscode",
+      "url": "https://github.com/microsoft/vscode",
+      "description": "Visual Studio Code",
+      "language": "TypeScript",
+      "stars": 158000,
+      "forks": 28000,
+      "currentPeriodStars": 500
+    },
+    {
+      "author": "facebook",
+      "name": "react",
+      "url": "https://github.com/facebook/react",
+      "description": "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+      "language": "JavaScript",
+      "stars": 220000,
+      "forks": 46000,
+      "currentPeriodStars": 800
+    },
+    {
+      "author": "vuejs",
+      "name": "vue",
+      "url": "https://github.com/vuejs/vue",
+      "description": "🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
+      "language": "JavaScript",
+      "stars": 210000,
+      "forks": 35000,
+      "currentPeriodStars": 600
+    },
+    {
+      "author": "torvalds",
+      "name": "linux",
+      "url": "https://github.com/torvalds/linux",
+      "description": "Linux kernel source tree",
+      "language": "C",
+      "stars": 160000,
+      "forks": 52000,
+      "currentPeriodStars": 300
+    },
+    {
+      "author": "python",
+      "name": "cpython",
+      "url": "https://github.com/python/cpython",
+      "description": "The Python programming language",
+      "language": "Python",
+      "stars": 61000,
+      "forks": 30000,
+      "currentPeriodStars": 400
+    }
+  ]
+}
