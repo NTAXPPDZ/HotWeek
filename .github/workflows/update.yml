@@ -87,6 +87,9 @@ jobs:
       contents: read
       pages: write
       id-token: write
+    environment:
+      name: github-pages
+      url: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
     if: needs.update-data.outputs.has-changes == 'true'
 
     steps:
