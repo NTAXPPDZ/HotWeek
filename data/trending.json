@@ -1,12 +1,75 @@
 {
   "metadata": {
-    "last_updated": "2025-09-29T03:08:05.120467",
-    "count": 12,
+    "last_updated": "2025-10-06T03:05:16.140241",
+    "count": 15,
     "source": "GitHub Trending API",
-    "total_merged": 12,
-    "new_added": 0
+    "total_merged": 15,
+    "new_added": 3
   },
   "repositories": [
+    {
+      "author": "golang",
+      "name": "go",
+      "full_name": "golang/go",
+      "url": "https://github.com/golang/go",
+      "description": "A powerful Go library for building amazing applications",
+      "language": "Go",
+      "stars": 230120,
+      "forks": 27875,
+      "currentPeriodStars": 107,
+      "builtBy": [
+        {
+          "username": "maintainer",
+          "href": "https://github.com/maintainer"
+        },
+        {
+          "username": "dev3",
+          "href": "https://github.com/dev3"
+        }
+      ]
+    },
+    {
+      "author": "flutter",
+      "name": "flutter",
+      "full_name": "flutter/flutter",
+      "url": "https://github.com/flutter/flutter",
+      "description": "Open source flutter project maintained by flutter",
+      "language": "Dart",
+      "stars": 178413,
+      "forks": 45595,
+      "currentPeriodStars": 244,
+      "builtBy": [
+        {
+          "username": "maintainer",
+          "href": "https://github.com/maintainer"
+        },
+        {
+          "username": "dev1",
+          "href": "https://github.com/dev1"
+        }
+      ]
+    },
+    {
+      "author": "spring-projects",
+      "name": "spring-boot",
+      "full_name": "spring-projects/spring-boot",
+      "url": "https://github.com/spring-projects/spring-boot",
+      "description": "Open source spring-boot project maintained by spring-projects",
+      "language": "Java",
+      "stars": 196648,
+      "forks": 38940,
+      "currentPeriodStars": 200,
+      "builtBy": [
+        {
+          "username": "maintainer",
+          "href": "https://github.com/maintainer"
+        },
+        {
+          "username": "dev1",
+          "href": "https://github.com/dev1"
+        }
+      ]
+    },
     {
       "author": "vercel",
       "name": "next.js",

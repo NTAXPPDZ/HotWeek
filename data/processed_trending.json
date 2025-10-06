@@ -1,22 +1,39 @@
 {
   "metadata": {
-    "last_updated": "2025-09-29T03:08:05.120467",
-    "count": 12,
+    "last_updated": "2025-10-06T03:05:16.140241",
+    "count": 15,
     "source": "GitHub Trending API",
-    "total_merged": 12,
-    "new_added": 0,
-    "processed_at": "2025-09-29T03:08:05.174893",
-    "total_repositories": 12,
+    "total_merged": 15,
+    "new_added": 3,
+    "processed_at": "2025-10-06T03:05:16.194658",
+    "total_repositories": 15,
     "language_distribution": {
+      "Go": 3,
+      "Dart": 1,
+      "Java": 1,
       "JavaScript": 4,
       "Python": 3,
-      "Go": 2,
       "Ruby": 1,
       "TypeScript": 1,
       "C": 1
     }
   },
   "repositories": [
+    {
+      "author": "golang",
+      "name": "go",
+      "full_name": "golang/go",
+      "url": "https://github.com/golang/go",
+      "description": "A powerful Go library for building amazing applications",
+      "language": "Go",
+      "stars": 230120,
+      "forks": 27875,
+      "current_period_stars": 107,
+      "stars_text": "230.1K",
+      "forks_text": "27.9K",
+      "trending_stars_text": "107",
+      "language_color": "#00ADD8"
+    },
     {
       "author": "rails",
       "name": "rails",
@@ -91,6 +108,36 @@
       "forks_text": "23.7K",
       "trending_stars_text": "412",
       "language_color": "#3572A5"
+    },
+    {
+      "author": "spring-projects",
+      "name": "spring-boot",
+      "full_name": "spring-projects/spring-boot",
+      "url": "https://github.com/spring-projects/spring-boot",
+      "description": "Open source spring-boot project maintained by spring-projects",
+      "language": "Java",
+      "stars": 196648,
+      "forks": 38940,
+      "current_period_stars": 200,
+      "stars_text": "196.6K",
+      "forks_text": "38.9K",
+      "trending_stars_text": "200",
+      "language_color": "#b07219"
+    },
+    {
+      "author": "flutter",
+      "name": "flutter",
+      "full_name": "flutter/flutter",
+      "url": "https://github.com/flutter/flutter",
+      "description": "Open source flutter project maintained by flutter",
+      "language": "Dart",
+      "stars": 178413,
+      "forks": 45595,
+      "current_period_stars": 244,
+      "stars_text": "178.4K",
+      "forks_text": "45.6K",
+      "trending_stars_text": "244",
+      "language_color": "#6c757d"
     },
     {
       "author": "torvalds",
@@ -200,7 +247,9 @@
   ],
   "languages": [
     "C",
+    "Dart",
     "Go",
+    "Java",
     "JavaScript",
     "Python",
     "Ruby",
