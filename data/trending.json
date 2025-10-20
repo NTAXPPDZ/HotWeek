@@ -1,12 +1,33 @@
 {
   "metadata": {
-    "last_updated": "2025-10-13T03:13:37.347855",
-    "count": 15,
+    "last_updated": "2025-10-20T03:19:22.211621",
+    "count": 16,
     "source": "GitHub Trending API",
-    "total_merged": 15,
-    "new_added": 0
+    "total_merged": 16,
+    "new_added": 1
   },
   "repositories": [
+    {
+      "author": "tensorflow",
+      "name": "tensorflow",
+      "full_name": "tensorflow/tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "description": "Tensorflow is an open-source project for developers",
+      "language": "C++",
+      "stars": 83788,
+      "forks": 14582,
+      "currentPeriodStars": 15,
+      "builtBy": [
+        {
+          "username": "dev3",
+          "href": "https://github.com/dev3"
+        },
+        {
+          "username": "maintainer",
+          "href": "https://github.com/maintainer"
+        }
+      ]
+    },
     {
       "author": "golang",
       "name": "go",
